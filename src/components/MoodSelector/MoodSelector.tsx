@@ -1,8 +1,9 @@
-import { Stack, Text } from "@tamagui/core";
-import { XStack } from "@tamagui/stacks";
 import React from "react";
 
-const moods = [
+import { Stack, Text } from "@tamagui/core";
+import { XStack } from "@tamagui/stacks";
+
+export const moods = [
   { emoji: "😃", value: 5 },
   { emoji: "🙂", value: 4 },
   { emoji: "😐", value: 3 },

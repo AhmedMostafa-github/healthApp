@@ -1,17 +1,15 @@
 export const lightColors = {
-  backgroundGradient: ["#E0F7FA", "#FFFFFF"],
-  primaryAccent: "#4DB6AC",
+  backgroundGradient: ["#E5F4F5"],
   textPrimary: "#333333",
-  inputBackground: "#F9F9F9",
-  buttonBackground: "#26A69A",
-  success: "#66BB6A",
+  inputBackground: "#FFFFFF",
+  buttonBackground: "#4DB6AC",
+  primaryAccent: "#4DB6AC",
 };
 
 export const darkColors = {
-  backgroundGradient: ["#121212", "#1E1E1E"],
-  primaryAccent: "#26A69A",
-  textPrimary: "#E0E0E0",
-  inputBackground: "#2A2A2A",
-  buttonBackground: "#00897B",
-  success: "#81C784",
+  backgroundGradient: ["#121212"],
+  textPrimary: "#FFFFFF",
+  inputBackground: "#2D2D2D",
+  buttonBackground: "#4DB6AC",
+  primaryAccent: "#4DB6AC",
 };

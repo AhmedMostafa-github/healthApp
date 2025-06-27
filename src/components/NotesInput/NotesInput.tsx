@@ -1,11 +1,13 @@
-import { Input } from "@tamagui/input";
 import React from "react";
 
+import { ColorTokens } from "@tamagui/core";
+import { Input } from "@tamagui/input";
 interface NotesInputProps {
   notes: string;
-  setNotes: (value: string) => void;
+  setNotes: any;
   backgroundColor: string;
   textColor: string;
+  placeholderTextColor?: ColorTokens;
 }
 
 const NotesInput: React.FC<NotesInputProps> = ({
@@ -13,16 +15,20 @@ const NotesInput: React.FC<NotesInputProps> = ({
   setNotes,
   backgroundColor,
   textColor,
+  placeholderTextColor,
 }) => (
   <Input
     placeholder="Anything you'd like to note today?"
     value={notes}
-    onChangeText={(e) => setNotes(e.nativeEvent.text)}
+    onChangeText={(text) => setNotes(text)}
     backgroundColor={backgroundColor}
     borderRadius={16}
     padding={16}
     color={textColor}
+    placeholderTextColor={placeholderTextColor}
     marginBottom={24}
+    multiline={true}
+    height={120}
   />
 );
 

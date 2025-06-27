@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "HealthApp",
-    "slug": "HealthApp",
+    "slug": "healthapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,7 +17,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.HealthApp"
     },
     "web": {
       "bundler": "metro",
@@ -38,6 +39,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d67154bc-a77b-4dcf-b285-e312959541d5"
+      }
+    },
+    "owner": "ahmed_m0stafa"
   }
 }
